@@ -23,7 +23,7 @@ function App() {
   function countryDetails(e){
     console.log("event value" , e.value)
 
-    axios.get(`http://localhost:8000/api/countries`)
+    axios.get(`http://localhost:8080/api/countries`)
     .then(res => {
       const persons = res.data;
       console.log(persons.countries)
